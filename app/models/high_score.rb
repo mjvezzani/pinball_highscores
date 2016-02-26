@@ -1,3 +1,4 @@
 class HighScore < ActiveRecord::Base
-  belongs_to :table, dependent: :destroy
+  belongs_to :pin, dependent: :destroy
+  belongs_to :user, dependent: :destroy
 end

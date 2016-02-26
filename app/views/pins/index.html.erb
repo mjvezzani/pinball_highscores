@@ -3,13 +3,13 @@
 <h1>Listing Tables</h1>
 
 <ul id="table_list">
-  <%= render @tables %>
+  <%= render @pins %>
 </ul>
 
 <br>
 
-<%= link_to 'New Table', new_table_path %>
-<%= form_for(@table, remote: true) do |f| %>
+<%= link_to 'New Table', new_pin_path %>
+<%= form_for(@pin, remote: true) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name, class: "table_info" %>
   <br/>
